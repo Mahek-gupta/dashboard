@@ -5,7 +5,7 @@ function Dashboard() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/intern-data')
+    axios.get('https://dashboard-backend-10ik.onrender.com')
       .then(response => setData(response.data))
       .catch(error => console.error(error));
   }, []);
